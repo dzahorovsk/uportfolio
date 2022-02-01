@@ -1,0 +1,485 @@
+body {
+    background-color: #2d3c49;
+    font-family: 'Lato', sans-serif;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    line-height: 0.1;
+}
+
+hr {
+    height: 4px;
+    width: 100%;
+    background-color: #2d3c49;
+    border-radius: 2px;
+    border: none;
+}
+.container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 280px;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+}
+.top {
+    flex: 2;
+    height: 60px;
+    width: 50%;
+}
+
+.title {
+    height: 60px;
+    width: 300px;
+    font-family: 'Lato', sans-serif;
+    text-align: end;
+    color: #2d3c49;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 24px
+}
+.title:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+}
+/* блок меню */
+.menu {
+    z-index: 1000;
+    display: flex;
+    width: 700px;
+    position: sticky;
+    top: 0;
+    opacity: 0.5;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+/* блок бургер меню */
+.sMenu {
+    display: none;
+}
+#burger {
+    width: 30px;
+    height: 30px;
+}
+.sMenu ul {
+    display: none;
+    position: absolute;
+    top: 15px;
+    opacity: 0.5;
+    list-style-type: none;
+    padding: 5px;
+    background-color: #2d3c49;
+    border-radius: 4px;
+}
+.sMenu li {
+    padding: 20px 5px;
+}
+
+.sMenu:hover ul {
+    display: block;
+    opacity: 0.8;
+}
+
+.leftNavi:hover {
+    color: orange;
+    transition: color 0.4s linear;
+}
+
+/* блок основного меню */
+.lMenu {
+    display: block;
+    height: 30px;
+    width: 698px;
+    padding-top: 10px;
+    background-color: #2d3c49;
+    border-radius: 20px;
+}
+.lMenu ul {
+    list-style-type: none;
+    display: inline;
+    padding: 0px;
+}
+.lMenu li {
+    display: inline;
+}
+/* блок кнопок меню */
+.navi-left {
+    padding: 10px 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.navi-right {
+    padding: 10px 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navi {
+    padding: 10px 25px;
+}
+.menu:hover {
+    opacity: 1;
+}
+.navi-left:hover {
+    color: orange;
+    transition: color 0.4s linear;
+}
+.navi-right:hover {
+    color: orange;
+    transition: color 0.4s linear;
+}
+.navi:hover {
+    color: orange;
+    transition: color 0.4s linear;
+}
+/* блок обо мне */
+.aboutme {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    max-width: 100%;
+}
+.about-text {
+    width: 80%;
+    height: 150px;
+    color: #2d3c49;
+    font-size: 18px;
+    margin-top: 30px;
+}
+.about-photo {
+    height: 200px;
+    width: 200px;
+}
+.main {
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
+.about-photo:hover {
+    transform: scale(1.08);
+}
+.about-text:hover {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* блоки названия и контента в каждой секции */
+.title-box {
+    width: 100%;
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.content-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+}
+.title-section:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+}
+.title-section {
+    width: 200px;
+}
+/* блоки внутри блоков котент в каждой из секций */
+.item-box {
+    position: relative;
+    width: 50%;
+    height: 120px;
+    margin: 5px;
+}
+.item-box:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+}
+/* блок мои скилы */
+.myskills {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color: #6b6f74;
+    border-radius: 4px;
+}
+.skills-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+.skills-icon {
+    position: absolute;
+    height: 50px;
+}
+.skills-title {
+    position: absolute;
+    left: 60px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+}
+.skills-text {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    color: white;
+    font-size: 14px;
+}
+
+
+/* блок увлечений */
+.mypassion {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+.title-passion {
+    color: orange;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: none; 
+}
+.title-passion:hover {
+    color: coral;
+}
+
+
+/* галерея */
+.flex {
+	display: flex;
+	overflow: hidden; 
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+}
+.item {
+	height: 300px;
+	flex: 30%;
+	transition: flex 300ms ease;
+	box-shadow: 0 0 19px 3px #000; 
+    margin: 1px; 
+}
+.item:hover {
+ 	flex: 0.1 0.1 400px;
+	background-size: 100% 100%;
+}
+.img1 { 
+    background: url("../assets/images/bee1.jpg") 0 0 no-repeat;
+}
+.img2 { 
+    background: url("../assets/images/bee2.jpg") 0 0 no-repeat;
+}
+.img3 { 
+    background: url("../assets/images/bee3.jpg") 0 0 no-repeat;
+}
+.img4 { 
+    background: url("../assets/images/bee4.jpg") 0 0 no-repeat;
+}
+.img11 { 
+    background: url("../assets/images/nav4.jpg") 0 0 no-repeat;
+}
+.img22 { 
+    background: url("../assets/images/nav2.jpg") 0 0 no-repeat;
+}
+.img33 { 
+    background: url("../assets/images/nav1.jpg") 0 0 no-repeat;
+}
+.img44 { 
+    background: url("../assets/images/nav3.jpg") 0 0 no-repeat;
+}
+
+/* блок котактов */
+.contact {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    background-color: #6b6f74;
+    border-radius: 4px;
+}
+.contact-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.contact-box2 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+.item-box1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+}
+.item-box1:hover {
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.466);
+}
+.contact-icon {
+    position: absolute;
+    height: 40px;
+    transition: all 0.2s ease;
+}
+.contact-icon:hover {
+    transform: scale(1.1);
+}
+.contact-text {
+    position: absolute;
+    top: 2px;
+    left: 60px;
+    color: white;
+    font-size: 24px;
+}
+.item-box2 {
+    position: relative;
+    width: 33%;
+    height: 50px;
+    margin: 20px;
+}
+
+/* резюме */
+
+.cv-box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+.cv {
+    height: 30px;
+    width: 150px;
+    background-color: #999da1;
+    border-radius: 20px;
+    padding: 5px 10px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+.cv:hover a {
+    color: #2d3c49;
+    transition: color 0.4s linear;
+}
+.cv:hover {
+    transform: scale(1.05);
+}
+
+/* адаптивность */
+
+@media screen and (max-width: 750px){
+    .lMenu {
+        display: none;
+    }
+    .sMenu {
+        display: block;
+    }
+    .menu {
+        width: 140px;
+    }
+}
+@media screen and (max-width: 950px){
+    .content-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-box {
+        width: 90%;
+        justify-content: center;
+    }
+    .item-box {
+        width: 40%;
+    }
+    .about-text {
+        width: 100%;
+        height: 180px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 650px){
+
+    .skills-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-box {
+        width: 95%;
+        height: 80px;
+    }
+    .contact-icon {
+        height: 30px;
+    }
+    .contact-text {
+        top: 2px;
+        left: 40px;
+        font-size: 18px;
+        width: 100%;
+    }
+    .item {
+        height: 150px;
+        background-size: cover;
+    }
+    .item:hover {
+        flex: 0.1 0.1 200px;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width: 590px){
+    .about-text {
+        width: 100%;
+        height: 200px;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 450px){
+    .about-text {
+        width: 100%;
+        height: 220px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .item-box {
+        width: 95%;
+        height: 110px;
+    }
+    .contact-text {
+        top: 2px;
+        left: 35px;
+        width: 90%;
+    }
+    .contact-box1 {
+        width: 100%;
+    }
+    .item-box1 {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .title-passion {
+        font-size: 14px;
+    }
+}
